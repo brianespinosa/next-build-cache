@@ -35,5 +35,4 @@ jobs:
 ## Assumptions
 
 - We are handling install caching with other tools like `node-setup` or `brianespinosa/checkout-setup-node-install`
-- We are using `yarn` as our package manager so we can leverage a `yarn.lock` file to generate part of our build cache hash
 - This action runs immediately **before** a NextJS build command to look for a build cache (post-job actions will automatically save the build cache upon build completion)

@@ -13,12 +13,12 @@ runs:
     # https://github.com/actions/cache#usage
     - uses: actions/cache@v4
       with:
-        # We are leveraging setup-node for caching, so we do not need to use it for yarn, only for the Next.js cache.
+        # We are leveraging setup-node for caching, so we do not need to use it for the package manager, only for the Next.js cache.
         path: |
           ${{ github.workspace }}/**/.next/cache
         # Always save a fresh cache entry per run; restore from the most recent build.
-        key: nextjs-build-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-${{ github.run_id }}
+        key: nextjs-build-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock', '**/package-lock.json', '**/npm-shrinkwrap.json', '**/pnpm-lock.yaml', '**/bun.lockb', '**/bun.lock') }}-${{ github.run_id }}
         restore-keys: |
-          nextjs-build-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}-
+          nextjs-build-cache-${{ runner.os }}-${{ hashFiles('**/yarn.lock', '**/package-lock.json', '**/npm-shrinkwrap.json', '**/pnpm-lock.yaml', '**/bun.lockb', '**/bun.lock') }}-
           nextjs-build-cache-${{ runner.os }}-
       
