@@ -1,5 +1,12 @@
 # Changelog
 
+## v3
+
+### Changes
+
+- **Upgraded `actions/cache` to v5** — resolves Node.js 20 deprecation warnings ahead of the GitHub Actions runner migration to Node.js 24 (June 2, 2026)
+- **Added Dependabot config** — weekly automated updates for GitHub Actions dependencies with `chore:` conventional commit prefix and auto-rebase enabled
+
 ## v2
 
 ### Changes
