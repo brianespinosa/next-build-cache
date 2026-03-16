@@ -6,7 +6,7 @@
 Set up NextJS build cache for faster GitHub Actions build times
 
 ```
-brianespinosa/next-build-cache@v2
+brianespinosa/next-build-cache@v3
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: brianespinosa/checkout-setup-node-install@main
-      - uses: brianespinosa/next-build-cache@v2
+      - uses: brianespinosa/next-build-cache@v3
       - run: yarn build
 ```
 
