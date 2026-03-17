@@ -3,7 +3,7 @@
 ![Last Updated](https://img.shields.io/github/last-commit/brianespinosa/next-build-cache?label=Last%20Updated&cacheSeconds=120)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Set up NextJS build cache for faster GitHub Actions build times
+Composite action that sets up Next.js build cache for faster GitHub Actions build times
 
 ```
 brianespinosa/next-build-cache@v3

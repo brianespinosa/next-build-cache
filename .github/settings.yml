@@ -1,0 +1,7 @@
+_extends: brianespinosa/settings:actions.yml
+
+repository:
+  name: next-build-cache
+  description: Composite action that sets up Next.js build cache for faster GitHub Actions build times
+  topics: github-actions,composite-action,cache,nextjs,nodejs
+  private: false
